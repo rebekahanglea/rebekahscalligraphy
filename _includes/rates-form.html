@@ -1,10 +1,10 @@
 <div id="rates-form">
     <div class="form-field">
-        <label for="field-text">Full text of your piece</label>
+        <label for="field-text"><strong>Full text of your piece</strong></label>
         <textarea name="text" id="field-text"></textarea>
     </div>
     <div class="form-field">
-        <label>Ink color</label>
+        <label><strong>Ink color</strong></label>
         <fieldset>
             <label><input type="radio" name="ink-color" value="black"> Black</label>
             <label><input type="radio" name="ink-color" value="colored"> Colored</label>
@@ -16,16 +16,21 @@
         <input type="number" max="10" min="0" name="inks" id="field-inks">
     </div>
     <div class="form-field">
+        <label><strong>Additional options</strong></label>
         <label><input type="checkbox" name="" value="5"> Colored paper</label>
         <label><input type="checkbox" name="" value="5"> Smaller than 3”x5”</label>
         <label><input type="checkbox" name="" value="15"> Larger than 8”x10”</label>
         <label><input type="checkbox" name="" value="40"> Unique layout</label>
         <label><input type="checkbox" name="" value="10"> Matted for frame</label>
         <label><input type="checkbox" name="" value="15"> Include digital scan</label>
+    </div>
+    <div class="form-field">
+        <label><strong>Other</strong></label>
         <label><input type="checkbox" name="" value="8"> Shipping needed</label>
+        <label><input type="checkbox" name="" value="-5"> Photographs of my commissioned piece may be used for marketing</label>
     </div>
 </div>
 
-<p><strong>Estimate:</strong> $<span id="rates-estimate"></span></p>
+<p><strong>Estimate:</strong> $<span id="rates-estimate">0</span></p>
 
 <script src="{% link assets/form.js %}"></script>

@@ -5,7 +5,10 @@ window.addEventListener('DOMContentLoaded', function() {
         field.addEventListener('input', function(e) {
             if (document.querySelector('input[name="ink-color"][value="multiple"]').checked == true) {
                 document.querySelector('.form-field.inks').style.display = "block";
-            } else document.querySelector('.form-field.inks').style.display = "none";
+            } else {
+                document.querySelector('.form-field.inks').style.display = "none";
+                document.querySelector('input[name=inks]').value = "0";
+            }
             getEstimate();
         })
     });
@@ -29,8 +32,12 @@ window.addEventListener('DOMContentLoaded', function() {
             else estimate += 80 + ((numberOfWords - 20) * 8);
         }
         
+        // colored ink
+        if (ratesForm.querySelector('input[name="ink-color"][value="colored"]').checked == true) {
+            estimate += 5;
+        }
 
-        // colored inks
+        // multiple colored inks
         var fieldInks = document.querySelector('#field-inks');
         if (fieldInks.value != "" && fieldInks.value.search(/[0-9]+/) > -1 && parseFloat(fieldInks.value) <=10) {
             estimate += 5 * parseFloat(fieldInks.value)
