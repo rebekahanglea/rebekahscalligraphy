@@ -16,4 +16,4 @@ If you've settled on something you like, contact me and I will get you a final p
 
 And as always, please don't hesitate to reach out if you have any questions. I'm glad to help. Looking forward to working with you!
 
-- Rebekah
+Rebekah <3
