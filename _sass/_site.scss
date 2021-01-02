@@ -1,0 +1,79 @@
+$primary-font-family: 'Helvetica', Arial, sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $primary-font-family;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+nav {
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        li {
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 1em 1.5em;
+                color: #000;
+            }
+        }
+    }
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.15em;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        margin-bottom: 1.5em;
+    }
+}
+
+#rates-form {
+    label {
+        display: block;
+    }
+
+    input[type="text"], input[type="number"], select, textarea {
+        width: 100%;
+        font: inherit;
+    }
+
+    .form-field {
+        margin-bottom: 1.5em;
+
+        &.inks {
+            input {
+                max-width: 75px;
+            }
+        }
+    }
+
+    fieldset {
+        border: 0;
+    }
+}
+
+footer {
+    text-align: center;
+    background: #f0f0f0;
+    padding: 3rem;
+    font-size: .8em;
+}
