@@ -1,10 +1,10 @@
 <div id="rates-form">
     <div class="form-field">
-        <label for="field-text"><strong>Full text of your piece</strong></label>
+        <label for="field-text"><strong>Full text of your commissioned piece</strong></label>
         <textarea name="text" id="field-text"></textarea>
     </div>
     <div class="form-field">
-        <label><strong>Ink color</strong></label>
+        <label><strong>Ink</strong></label>
         <fieldset>
             <label><input type="radio" name="ink-color" value="black"> Black</label>
             <label><input type="radio" name="ink-color" value="colored"> Colored</label>
@@ -13,21 +13,21 @@
     </div>
     <div class="form-field inks" style="display: none;">
         <label for="field-inks">How many colors (besides black)?</label>
-        <input type="number" max="10" min="0" name="inks" id="field-inks">
+        <input type="number" max="10" min="1" name="inks" id="field-inks">
     </div>
     <div class="form-field">
-        <label><strong>Additional options</strong></label>
-        <label><input type="checkbox" name="" value="5"> Colored paper</label>
-        <label><input type="checkbox" name="" value="5"> Smaller than 3”x5”</label>
-        <label><input type="checkbox" name="" value="15"> Larger than 8”x10”</label>
-        <label><input type="checkbox" name="" value="40"> Unique layout</label>
-        <label><input type="checkbox" name="" value="10"> Matted for frame</label>
-        <label><input type="checkbox" name="" value="15"> Include digital scan</label>
+        <label><strong>Special</strong></label>
+        <label><input type="checkbox" name="" value="5"> My piece is smaller than 3”x5”</label>
+        <label><input type="checkbox" name="" value="15"> My piece is larger than 8”x10” (excluding matte)</label>
+        <label><input type="checkbox" name="" value="5"> Use colored paper, not white</label>
+        <label><input type="checkbox" name="" value="40"> My piece has a unique layout or special instructions</label>
     </div>
     <div class="form-field">
         <label><strong>Other</strong></label>
-        <label><input type="checkbox" name="" value="8"> Shipping needed</label>
-        <label><input type="checkbox" name="" value="-5"> Photographs of my commissioned piece may be used for marketing</label>
+        <label><input type="checkbox" name="" value="10"> Matte my commission for framing</label>
+        <label><input type="checkbox" name="" value="15"> Include a digital scan of my commission</label>
+        <label><input type="checkbox" name="" value="8"> I need this shipped to me (+$8, U.S.) </label>
+        <label><input type="checkbox" name="" value="-5"> Photos of my commissioned piece may be used for marketing (-$5)</label>
     </div>
 </div>
 
